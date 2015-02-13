@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def hello
-    render text: "hello, world!"
+    upside_down_exclam = '&iexcl;'
+    render text: upside_down_exclam + "hola, mundo!"
   end
 end
