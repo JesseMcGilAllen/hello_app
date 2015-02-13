@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     upside_down_exclam = '&iexcl;'
     render text: upside_down_exclam + "hola, mundo!"
   end
+  
+  def goodbye
+    render text: "goodbye, world!"
+  end
 end
